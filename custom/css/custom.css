@@ -1,0 +1,73 @@
+nav.navbar:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.button1:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.cardHeader {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.cardContainer {
+    padding: 10px;
+}
+
+
+.div-hide {
+	display: none;
+}
+
+.kv-file-zoom {
+	display: none;
+}
+
+div.kv-avatar div.file-input div.file-preview {
+	width: 200px;
+}
+
+/*login form*/
+.vertical {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+
+/*Form*/
+input[type=text]:focus, input[type=search]:focus, input[type="password"]:focus, select:focus{
+		border: 1px solid #1b394e;
+    background-color: #f7f7f7;
+    outline: 0;
+    box-shadow: none;
+	}
+input[type=search], input[type=text], input[type=password], select{
+	height: 36px;
+	border: 1px solid #DBDBDB;
+	font-size: 1.6rem!important;border: none;
+    border-radius: 2px;
+    background: #fff;
+    padding: 6px 9pt!important;
+    color: #1b394e;
+    border: 1px solid #a8a8a8;
+}
+table.dataTable{
+	padding-top: 15px;
+}
+table.dataTable thead .sorting {
+    background-color: #8EC63F;
+    color: #005b24;
+}
+table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc{
+	background-color: #348b35;
+	color:#fff;
+}
