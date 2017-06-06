@@ -1,10 +1,9 @@
 <?php
-
 $localhost = "localhost";
-$username = "root";
-$password = "";
-$dbname = "stock";
-$siteurl = "http://localhost:9090";
+$username = "u901027382_stock";
+$password = "pass@123";
+$dbname = "u901027382_stock";
+$siteurl = "http://www.iniyadhu.com/stock";
 $sitename="stock";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
