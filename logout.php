@@ -8,6 +8,6 @@ session_unset();
 // destroy the session 
 session_destroy(); 
 
-header('location: '.$siteurl.'stock/index.php');
+header('location: '.$siteurl.'/index.php');
 
 ?>
