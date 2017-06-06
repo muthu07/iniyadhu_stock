@@ -4,7 +4,7 @@ require_once 'php_action/db_connect.php';
 session_start();
 
 if(isset($_SESSION['userId'])) {
-	header('location: '.$siteurl.'/'.$sitename.'/dashboard.php');	
+	header('location: '.$siteurl.'/dashboard.php');	
 }
 
 $errors = array();
@@ -39,7 +39,7 @@ if($_POST) {
 				// set session
 				$_SESSION['userId'] = $user_id;
 
-				header('location: '.$siteurl.'stock/dashboard.php');
+				header('location: '.$siteurl.'/dashboard.php');
 			} else{
 
 				$errors[] = "Incorrect username/password combination";
