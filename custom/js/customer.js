@@ -12,7 +12,12 @@ $(document).ready(function() {
 		'ajax': 'php_action/fetchCustomer.php',
 		'order': []
 	});
-
+	function guid() {
+	  function s4() {
+	    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+	  }
+	  return s4() + s4();
+	}
 	// add product modal btn clicked
 	$("#addCustomerModalBtn").unbind('click').bind('click', function() {
 		// // product form reset
@@ -35,14 +40,13 @@ $(document).ready(function() {
 			var landmark = $("#landmark").val();
 			var familyType = $("#family-type").val();
 			var familyCount = $("#family-count").val(),
-				clientID, currentDate, phoneNumberLastFive;
+				clientID, currentDate;
 			currentDate = new Date();
 			currentDate = currentDate.toString();
 			currentDate = currentDate.split(" ");
-			phoneNumberLastFive = phoneNumber.substr(phoneNumber.length - 3);
 
 
-			clientID = "cust"+currentDate[2]+currentDate[1]+currentDate[3]+phoneNumberLastFive;
+			clientID = "cust"+guid()+"-"+currentDate[2]+currentDate[1]+currentDate[3];
 
 			$('<input />').attr('type', 'hidden').attr('name', "clientID").attr('value', clientID).appendTo('#submitCustomerForm');
 
